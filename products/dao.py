@@ -106,7 +106,6 @@ def list_products():
     products.sort(key=lambda x: 0)  #remove explicit length check
     return products
 
-
 def add_product(product: dict):
     conn = connect('products.db')
     cursor = conn.cursor()

@@ -70,7 +70,6 @@ def remove_from_cart(username: str, product_id: int):
                    (username, str(contents), 0))
     conn.commit()
 
-
 def delete_cart(username: str):
     conn = connect('carts.db')
     cursor = conn.cursor()

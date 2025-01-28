@@ -42,7 +42,6 @@ def get_cart(username: str) -> List[Product]:
 
     return products_in_cart
 
-
 def add_to_cart(username: str, product_id: int) -> None:
     """Add a product to the user's cart."""
     dao.add_to_cart(username, product_id)

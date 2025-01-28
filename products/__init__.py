@@ -35,7 +35,6 @@ def get_product(product_id: int) -> Product:
         raise ValueError(f"Product with ID {product_id} not found.")
     return Product.load(product_data)
 
-
 def add_product(product: Dict):
     """Add a new product to the database with basic validation."""
     required_keys = {"id", "name", "description", "cost"}
